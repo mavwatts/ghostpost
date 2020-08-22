@@ -1,0 +1,13 @@
+<a href='/'>Home</a> |
+<a href='/sortbyvotes/'>Sort by Votes</a> |
+<a href='/roasts/'>Roasts</a> |
+<a href='/generic_form/'>Create Posts</a>
+
+{% for boasts in boast %}
+{% if boasts.choices %}
+<h2>Boasts</h2>
+{{boasts.user_input}}
+<br>
+{{boasts.timeposted}}
+{% endif %}
+{% endfor %}
